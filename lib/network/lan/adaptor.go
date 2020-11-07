@@ -154,7 +154,7 @@ LAB:
 			IPv6SubMask:  ipv6SubMask,
 			IPv6MaskBits: ipv6MaskBits,
 		}
-		if addrs,err:= iface.MulticastAddrs();err==nil{
+		if addrs, err := iface.MulticastAddrs(); err == nil {
 			adaptor.MulticastAddress = addrs
 		}
 		adaptor.IPv4Available = cidrCalculateAvailable(adaptor.IPv4SubMask)

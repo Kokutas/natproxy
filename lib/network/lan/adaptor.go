@@ -52,9 +52,11 @@ type Adaptor struct {
 	IPv6SubMask int `json:"ipv6_sub_mask"`
 	// 网卡/网络适配器IPv6掩码总位数
 	IPv6MaskBits int `json:"ipv6_mask_bits"`
+	// 网卡/网络适配器加入的组播地址
+	MulticastAddress []net.Addr `json:"multicast_address"`
 }
 
-// 根据IP获取网卡/网络适配器信息
+// 根据IP获取启用的网卡/网络适配器信息
 func Adaptors(ip net.IP) (*Adaptor, error) {
 	addresss, err := net.ResolveIPAddr("", ip.String())
 	if err != nil {
@@ -78,7 +80,7 @@ func Adaptors(ip net.IP) (*Adaptor, error) {
 	return nil, fmt.Errorf("Not fond adaptor of ip = \"%v\".\n", ip)
 }
 
-// 获取所有的网卡/网络适配器信息
+// 获取所有启用的网卡/网络适配器信息
 func adaptors() ([]*Adaptor, error) {
 	// 获取所有的网卡/网络适配器信息
 	ifaces, err := net.Interfaces()
@@ -151,6 +153,9 @@ LAB:
 			IPv6Network:  ipv6Network,
 			IPv6SubMask:  ipv6SubMask,
 			IPv6MaskBits: ipv6MaskBits,
+		}
+		if addrs,err:= iface.MulticastAddrs();err==nil{
+			adaptor.MulticastAddress = addrs
 		}
 		adaptor.IPv4Available = cidrCalculateAvailable(adaptor.IPv4SubMask)
 		adaptor.IPv4Mask = cidrCalculateIPMask(adaptor.IPv4SubMask)

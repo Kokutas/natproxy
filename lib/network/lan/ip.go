@@ -10,7 +10,7 @@ import (
 )
 // 获取本机所在的局域网IP
 func LanIP() (net.IP,error) {
-	conn,err:=net.Dial("udp","google.com:80")
+	conn,err:=net.Dial("udp","google.com:http")
 	if err != nil {
 		return nil, err
 	}

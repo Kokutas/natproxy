@@ -20,16 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f56d8bd-7863-44a1-bba6-2aa921c1de91" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/natproxy.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/cmd/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/network/lan/adaptor.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/network/lan/adaptor_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/network/lan/ip.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/network/lan/ip_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/cmd/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/network/lan/adaptor.go" beforeDir="false" afterPath="$PROJECT_DIR$/lib/network/lan/adaptor.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/network/lan/ip.go" beforeDir="false" afterPath="$PROJECT_DIR$/lib/network/lan/ip.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +65,7 @@
       <recent name="D:\ProgramData\Workspace\src\natproxy\lib\network\local" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build natproxy/server/cmd">
+  <component name="RunManager" selected="Go Test.TestAdaptors in natproxy/lib/network/lan">
     <configuration name="go build natproxy/server/cmd" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="natproxy" />
       <working_directory value="$PROJECT_DIR$/server/cmd" />
@@ -80,6 +73,28 @@
       <filePath value="$PROJECT_DIR$/server/cmd/main.go" />
       <package value="natproxy/server/cmd" />
       <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestAdaptors in natproxy/lib/network/lan" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="natproxy" />
+      <working_directory value="$PROJECT_DIR$/lib/network/lan" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="natproxy/lib/network/lan" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^TestAdaptors$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestLanIP in natproxy/lib/network/lan (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="natproxy" />
+      <working_directory value="$PROJECT_DIR$/lib/network/lan" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="natproxy/lib/network/lan" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^TestLanIP$" />
       <method v="2" />
     </configuration>
     <configuration name="TestLanIP in natproxy/lib/network/lan" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -93,7 +108,7 @@
       <pattern value="^TestLanIP$" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_adaptors in natproxy/lib/network/lan" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_adaptors in natproxy/lib/network/lan (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="natproxy" />
       <working_directory value="$PROJECT_DIR$/lib/network/lan" />
       <framework value="gotest" />
@@ -104,35 +119,13 @@
       <pattern value="^Test_adaptors$" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_cidrCalculateAvailable in natproxy/lib/network/lan" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="natproxy" />
-      <working_directory value="$PROJECT_DIR$/lib/network/lan" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="natproxy/lib/network/lan" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^Test_cidrCalculateAvailable$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Test_cidrCalculateIPMask in natproxy/lib/network/lan" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="natproxy" />
-      <working_directory value="$PROJECT_DIR$/lib/network/lan" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="natproxy/lib/network/lan" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^Test_cidrCalculateIPMask$" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestAdaptors in natproxy/lib/network/lan" />
+        <item itemvalue="Go Test.TestLanIP in natproxy/lib/network/lan (1)" />
+        <item itemvalue="Go Test.Test_adaptors in natproxy/lib/network/lan (1)" />
         <item itemvalue="Go Build.go build natproxy/server/cmd" />
         <item itemvalue="Go Test.TestLanIP in natproxy/lib/network/lan" />
-        <item itemvalue="Go Test.Test_adaptors in natproxy/lib/network/lan" />
-        <item itemvalue="Go Test.Test_cidrCalculateAvailable in natproxy/lib/network/lan" />
-        <item itemvalue="Go Test.Test_cidrCalculateIPMask in natproxy/lib/network/lan" />
       </list>
     </recent_temporary>
   </component>
@@ -156,38 +149,38 @@
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1604687486781">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom" timestamp="1604725676509">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604687486781" />
-    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1604687486781">
+    <state width="1493" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604725676509" />
+    <state width="1493" height="210" key="GridCell.Tab.0.center" timestamp="1604725676509">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604687486781" />
-    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1604687486781">
+    <state width="1493" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1604725676509" />
+    <state width="1493" height="210" key="GridCell.Tab.0.left" timestamp="1604725676509">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604687486781" />
-    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1604687486781">
+    <state width="1493" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1604725676509" />
+    <state width="1493" height="210" key="GridCell.Tab.0.right" timestamp="1604725676509">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604687486781" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1604685122937">
+    <state width="1493" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1604725676509" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1604687661076">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604685122937" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1604685122937">
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604687661076" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1604687661076">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1604685122937" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1604685122937">
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1604687661076" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1604687661076">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1604685122937" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1604685122937">
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1604687661076" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1604687661076">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1604685122937" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1604687661076" />
     <state x="270" y="56" key="SettingsEditor" timestamp="1604672973251">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -13,7 +13,7 @@ import (
 	"testing"
 )
 
-// 获取所有的网卡/网络适配器信息 测试
+// 获取所有启用的网卡/网络适配器信息 测试
 func Test_adaptors(t *testing.T) {
 	adaptors, err := adaptors()
 	if err != nil {
@@ -26,7 +26,7 @@ func Test_adaptors(t *testing.T) {
 	fmt.Printf("%s\n", data)
 }
 
-// 根据IP获取网卡/网络适配器信息 测试
+// 根据IP获取启用的网卡/网络适配器信息 测试
 func TestAdaptors(t *testing.T) {
 	// 获取本机所在的局域网IP
 	ip, err := LanIP()

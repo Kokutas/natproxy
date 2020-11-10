@@ -14,8 +14,8 @@ import (
 )
 
 // 获取所有启用的网卡/网络适配器信息 测试
-func Test_adaptors(t *testing.T) {
-	adaptors, err := adaptors()
+func TestAdaptors(t *testing.T) {
+	adaptors, err := Adaptors()
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -27,13 +27,13 @@ func Test_adaptors(t *testing.T) {
 }
 
 // 根据IP获取启用的网卡/网络适配器信息 测试
-func TestAdaptors(t *testing.T) {
+func TestAdaptorByIP(t *testing.T) {
 	// 获取本机所在的局域网IP
 	ip, err := LanIP()
 	if err != nil {
 		log.Fatal(err)
 	}
-	adaptor, err := Adaptors(ip)
+	adaptor, err := AdaptorByIP(ip)
 	if err != nil {
 		log.Fatal(err)
 	}

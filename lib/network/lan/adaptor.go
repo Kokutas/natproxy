@@ -57,14 +57,14 @@ type Adaptor struct {
 }
 
 // 根据IP获取启用的网卡/网络适配器信息
-func Adaptors(ip net.IP) (*Adaptor, error) {
+func AdaptorByIP(ip net.IP) (*Adaptor, error) {
 	addresss, err := net.ResolveIPAddr("", ip.String())
 	if err != nil {
 		return nil, err
 	}
 	IP := net.ParseIP(addresss.String())
 	var adaptor *Adaptor
-	adaptors, err := adaptors()
+	adaptors, err := Adaptors()
 	if err != nil {
 		return nil, err
 	}
@@ -81,7 +81,7 @@ func Adaptors(ip net.IP) (*Adaptor, error) {
 }
 
 // 获取所有启用的网卡/网络适配器信息
-func adaptors() ([]*Adaptor, error) {
+func Adaptors() ([]*Adaptor, error) {
 	// 获取所有的网卡/网络适配器信息
 	ifaces, err := net.Interfaces()
 	if err != nil {

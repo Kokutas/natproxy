@@ -1,7 +1,7 @@
 package main
 
 import (
-	"natproxy/npc/cmd"
+	"natproxy/npc/command/cmd"
 )
 
 func main() {
